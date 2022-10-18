@@ -12,3 +12,6 @@ symfony.lock
 ###> phpunit/phpunit ###
 /phpunit.xml
 ###< phpunit/phpunit ###
+
+
+/.idea/
