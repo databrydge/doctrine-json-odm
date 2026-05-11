@@ -79,7 +79,7 @@ class TypedMapNormalizer implements DenormalizerInterface, DenormalizerAwareInte
 
     public function getSupportedTypes(?string $format): array
     {
-        return [MapInterface::class => null];
+        return [MapInterface::class => true];
     }
 
     private function createAndFillMap(array $data, string $class, ?string $format, array $context): TypedMapInterface

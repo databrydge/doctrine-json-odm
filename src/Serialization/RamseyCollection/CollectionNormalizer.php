@@ -52,7 +52,7 @@ class CollectionNormalizer implements DenormalizerInterface, DenormalizerAwareIn
 
     public function getSupportedTypes(?string $format): array
     {
-        return [CollectionInterface::class => null];
+        return [CollectionInterface::class => true];
     }
 
     private function createAndFillCollection(array $data, string $class, ?string $format, array $context): CollectionInterface
